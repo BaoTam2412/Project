@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xin gia nhập đội bóng</title>
+  </head>
+  <body>
+    <h1>Đơn xin gia nhập đội bóng FC Baotam</h1>
+    <p>Hãy điền đúng thông tin để được gọi lên tuyển sớm nhất nhe!</p>
+    <form>
+      <label for="Username"> Họ và tên:</label>
+      <input
+        type="text"
+        name="Username"
+        id="Username"
+        placeholder="VD: Nguyễn Văn A"
+        required
+      />
+      <br />
+      <label for="Email"> Email: </label>
+      <input
+        type="email"
+        name="Email"
+        id="Email"
+        placeholder="VD: abc123@gmail.com"
+        required
+        size="25"
+      />
+      <br />
+      <label for="Date"> Ngày tháng năm sinh </label>
+      <input type="date" name="Date" id="Date" required /> <br />
+      <br />
+      <label for="Story"> Tại sao bạn lại muốn vào FC Baotam ?</label> <br />
+      <textarea
+        name="Story"
+        id="Story"
+        placeholder="Hãy viết gì đó"
+        rows="2"
+        cols="30"
+        spellcheck
+      ></textarea>
+      <br />
+      <fieldset>
+        <legend>Giới tính của bạn ?</legend>
+        <label for="Male">
+          <input type="radio" name="gender" id="Male" /> Nam</label
+        >
+        <br />
+        <label for="Female">
+          <input type="radio" name="gender" id="Female" /> Nữ</label
+        >
+        <br />
+        <label for="Other">
+          <input type="radio" name="gender" id="Other" /> Khác
+        </label>
+        <br />
+      </fieldset>
+      <label for="positions"> Vị trí mà bạn có thể thi đấu </label><br />
+      <label for="GK">
+        <input type="checkbox" name="Gk" id="GK" /> Thủ môn
+      </label>
+      <br />
+      <label for="DF">
+        <input type="checkbox" name="DF" id="DF" /> Hậu vệ
+      </label>
+      <br />
+      <label for="MF">
+        <input type="checkbox" name="MF" id="MF" /> Tiền vệ
+      </label>
+      <br />
+      <label for="Attacker">
+        <input type="checkbox" name="Attacker" id="Attacker" /> Tấn công
+      </label>
+      <br />
+      <label for="PlayerName"> Cầu thủ bạn yêu thích: </label>
+      <input
+        type="text"
+        name="PlayerName"
+        id="PlayerName"
+        placeholder="VD: Cristiano Ronaldo"
+        list="player"
+      />
+      <datalist id="player">
+        <option value="Cristiano Ronaldo"></option>
+        <option value="Lionel Pepsi"></option>
+        <option value="Manuel Neuer"></option>
+        <option value="David de Gea "></option>
+      </datalist>
+      <br />
+      <label for="fav"> Mức độ yêu thích với cầu thủ đó (từ 1->10) </label>
+      <input type="number" name="fav" id="fav" min="1" max="10" /> <br />
+      <p><b>Bạn có cam kết đồng hành lâu dài với đội bóng không ?</b></p>
+      <label for="CamKet"
+        ><input type="checkbox" name="CamKet" id="CamKet" /> Tôi cam kết
+      </label>
+      <br />
+      <button type="submit">Gửi đơn</button>
+      <button type="reset">Ghi lại</button>
+    </form>
+  </body>
+</html>
