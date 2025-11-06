@@ -3,14 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type = "image/x-icon" href="monkey.ico">
+    <link rel="icon" type="image/x-icon" href="monkey.ico" />
+    <link rel="stylesheet" href="main.css" />
+    <title>CV bản thân</title>
   </head>
   <body>
-    <h1>Giới thiệu bản thân</h1>
-    <p> Tôi tên là vĩnh bảo tâm học tại Phân hiệu trường đại học thủy lợi </p>
+    <header>
+      <h1>Vĩnh Bảo Tâm</h1>
+      <p>
+        1 anh chàng coder
+        <span style="font-weight: bold; color: red">
+          ít năm kinh nghiệm hẹ hẹ</span
+        >
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">Introduce</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Contact">Contact me</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>Introduce</h2>
+        <ul>
+          <li>Học tập tại Phân Hiệu Trường Đại Học Thủy Lợi</li>
+          <li>Có 3 năm kinh nghiệm với full-stack-development</li>
+        </ul>
+      </section>
+      <section id="Project">
+        <h2>Project</h2>
+        <ul>
+          <li>Tạo trang web về AI</li>
+          <li>Tạo web cho user đăng nhập và lưu dữ liệu trên database</li>
+          <li>
+            Tạo web bán hàng cho brand burger Queen.
+            <a
+              href="https://calendar.google.com/calendar/u/0/r?pli=1"
+              target="_blank"
+            >
+              Bấm vào đây để xem web</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="Experience">
+        <h2>Experience</h2>
+        <table>
+          <caption>
+            Kinh nghiệm về tôi
+          </caption>
+          <thead>
+            <tr>
+              <th>Ngôn ngữ</th>
+              <th>Độ thành thạo</th>
+              <th>Project đã làm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C++</td>
+              <td>8.5/10</td>
+              <td>Dự án đoán số</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>10/10</td>
+              <td>Web bán hàng của brand burger Queen</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>10/10</td>
+              <td>Trang trí màu và animation trên web burger Queen</td>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>10/10</td>
+              <td>Tăng sự tương tác của user lên 35% cho web burger Queen</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Contact">
+        <h2>Contact me</h2>
+        <form>
+          <label for="text">
+            <textarea
+              name="letterbox"
+              id="letterbox"
+              placeholder="Hãy viết gì đó..."
+              cols="25"
+              rows="5"
+            ></textarea>
+          </label>
+          <br />
+          <button type="submit">Ấn vào đây ở gửi</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      &copy; Vinh Bao Tam, 5/11/2025
+      <br />
+      <a
+        href="https://drive.google.com/file/d/1eUkTHFJfnNHqcIiYLFsZ2CofMcCVtKbs/view?usp=drive_link"
+        target="_blank"
+        >Tải về CV
+      </a>
+    </footer>
   </body>
 </html>
-
-
